@@ -1,0 +1,383 @@
+@import "fonts.css";
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.desc_film::selection, .desc_film h2::selection, .user h3::selection, .review p::selection {
+	background-color: #fff;
+	color: #13268B;
+}
+
+header {
+	border-radius: 0px 0px 10px 10px;
+	height: 75px;
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.container {
+	margin: 0 122px;
+	position: relative;
+}
+.header_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+}
+.menu a {
+	padding: 5px 10px;
+	margin: 0 10px;
+	background: #FFFFFF;
+	border: 4px solid #FFFFFF;
+	box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	font-family: 'Exo 2';
+	color: #2D4DC0;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+}
+.blocks_wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0;
+}
+
+.block_left {
+	flex-grow: 2;
+}
+
+.poster {
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+}
+.poster p {
+	color: white;
+	font-family: "Exo 2";
+	font-weight: 700;
+	font-size: 20px;
+	margin: 0 0 0 10px;
+}
+.film_wrapper {
+	display: flex;
+	flex-grow: 2;
+}
+.film {
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 15px;
+}
+.film h2 {
+	font-family: "Exo 2";
+	color: white;
+}
+.film a {
+	color: white;
+}
+
+.empty_film {
+	max-width: 100%;
+	border-radius: 5px;
+}
+.poster_wrapper {
+	max-width: 30%;
+	margin: 0 10px 0 0;
+	padding: 0;
+	display: flex;
+}
+.film_block_wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.block_right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	margin: 0 0 0 28px;
+	max-width: 339px;
+	width: 100%;
+	font-family: "Exo 2";
+	color: white;
+}
+.light_text {
+	margin: 0;
+	color: #2D4DC0;
+}
+.desc_film {
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	font-family: "Exo 2";
+	color: white;
+	padding: 10px;
+	margin: 10px 0 0 0;
+}
+.desc_film h2 {
+	margin: 0 0 5px 0;
+}
+.menu_review {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.write_review_wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.write_review_wrapper input[type=submit] {
+	width: 100%;
+	margin: 10px 0 0 0;
+	background: #FFFFFF;
+	border: 4px solid #FFFFFF;
+	box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	font-family: 'Exo 2';
+	color: #2D4DC0;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	font-size: 16px;
+}
+.write_review {
+	resize: none;
+	color: white;
+	padding: 10px;
+	font-family: "Exo 2";
+	width: 394px;
+	height: 97px;
+	background: linear-gradient(91.04deg, #13268B -16.91%, #2E50CA 159.03%);
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	border: none;
+	position: relative;
+}
+.write_review::placeholder {
+	color: white;
+	text-align: right;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.rating_radio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	position: relative;
+}
+.rating_radio h2 {
+	font-size: 26px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.star_black, .star_yellow {
+	display: block;
+	margin: 0 20px 0 20px;
+}
+input[type=radio], .star_black {
+	display: none;
+}
+.write_review_wrapper input[type=text]::target-text{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.star_rating {
+	margin: 5px 0;
+	accent-color: yellow;
+}
+.head_review {
+	display: flex;
+	justify-content: space-between;
+}
+.review_stars {
+	display: flex;
+	align-items: center;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+}
+.user h3 {
+	margin: 0 0 0 10px;
+}
+.star_review img {
+	width: 23px;
+	height: 23px;
+	margin: 0 2px;
+}
+.star img {
+	width: 20px;
+}
+.star {
+	min-width: 40px;
+	margin: 3px;
+}
+.stars {
+	display: flex;
+	align-items: center;
+}
+.stars_wrapper {
+	margin: 10px 0 0 0;
+	display: flex;
+}
+.wrapper_counters {
+	margin: 0 0 0 10px;
+}
+.wrapper_counter {
+	display: flex;
+	margin: 5px 0 0 0;
+	align-items: center;
+	justify-content: space-between;
+}
+.wrapper_counter p {
+	margin: 0 10px 0 0;
+	font-weight: 700;
+}
+.reviews_stars h2 {
+	font-size: 40px;
+}
+.counter_bg {
+	width: 122px;
+	height: 5px;
+	background: #737373;
+	border-radius: 3.5px;
+	position: relative;
+}
+.counter {
+	background: #E5CF00;
+	border-radius: 3.5px;
+	width: 0%;
+	height: 5px;
+}
+.reviews {
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	color: white;
+	font-family: "Exo 2";
+	padding: 10px;
+	margin: 10px 0 0 0;
+}
+.reviews h2 {
+	margin: 0;
+}
+.review_stars h2 {
+	margin: 0 5px 0 0;
+}
+.item {
+	max-height: 427px;
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	padding: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 20px 0;
+	transition: 0.2s ease;
+	z-index: 0;
+}
+.item:hover {
+	transform: scale(1.05);
+}
+.film_info {
+	display: flex;
+	justify-content: space-between;
+}
+.rating_film {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0 0 0;
+}
+.star_film img {
+	width: 20px;
+	height: 20px;
+}
+.item:first-of-type {
+	margin: 20px 0 20px 0;
+}
+.item p {
+	font-family: 'Exo 2';
+	font-weight: 700;
+	color: white;
+	margin: 11px 0 0 0;
+}
+.rating_film p {
+	margin: 0 5px 0 0;
+}
+.empty {
+	width: 197px;
+	height: 320px;
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 5px;
+	margin: 10px 10px 5px 10px;
+}
+.item a, .item_chanr a {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+footer {
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 10px 10px 0 0;
+	max-height: 240px;
+	padding-top: 40px;
+}
+
+.blocks, .block_links {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-family: 'Exo 2';
+	font-weight: 700;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	margin: 0 28px;
+}
+
+.links a {
+	text-decoration: none;
+	color: white;
+	margin-top: 5px;
+}
+
+.links h2 {
+	margin: 0 0 10px 0;
+	font-size: 28px;
+}
+
+.block_info {
+	font-family: 'Exo 2';
+	width: 210px;
+	font-size: 14px;
+}
+.desc {
+	font-weight: 400;
+}
+
+@media(max-width: 1280px) {
+	.container {
+		margin: 0 20px;
+	}
+}

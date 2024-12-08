@@ -1,0 +1,227 @@
+@import "fonts.css";
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+main {
+	flex-grow: 3;
+}
+header {
+	border-radius: 0px 0px 10px 10px;
+	height: 75px;
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.container {
+	margin: 0 122px;
+}
+.header_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+}
+.menu a {
+	padding: 5px 10px;
+	margin: 0 10px;
+	background: #FFFFFF;
+	border: 4px solid #FFFFFF;
+	box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	font-family: 'Exo 2';
+	color: #2D4DC0;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+}
+.slider {
+	display: flex;
+	height: 600px;
+	align-items: center;
+	justify-content: space-between;
+}
+.back {
+	width: 20px;
+	margin-left: 40px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.forward {
+	width: 20px;
+	margin-left: 20px;
+	margin-right: 40px;
+	cursor: pointer;
+}
+.slide {
+	overflow: hidden;
+	width: 1035px;
+	padding: 15px;
+}
+.container h2 {
+	font-family: 'Exo 2';
+	font-weight: 700;
+	color: #2D4DC0;
+}
+.items_wrapper {
+	width:100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.block_slide {
+	display: flex;
+	margin: 0 28px;
+}
+.item {
+	max-height: 427px;
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	padding: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0 45px 45px 45px;
+	transition: 0.2s ease;
+	z-index: 0;
+}
+.film_info {
+	display: flex;
+	justify-content: space-between;
+}
+.rating_film {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0 0 0;
+}
+.star_film img {
+	width: 20px;
+	height: 20px;
+}
+.item p {
+	font-family: 'Exo 2';
+	font-weight: 700;
+	color: white;
+	margin: 11px 0 0 0;
+}
+.rating_film p {
+	margin: 0 5px 0 0;
+}
+.poster {
+	border-radius: 5px;
+}
+.item:hover {
+	transform: scale(1.05);
+}
+.empty {
+	width: 197px;
+	height: 320px;
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 5px;
+}
+.item a, .item_chanr a {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.item_chanr {
+	width: 197px;
+	max-height: 427px;
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	padding: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0 28px;
+}
+.item_chanr:first-child {
+	margin-left: 0;
+}
+.item_chanr:last-child {
+	margin-right: 0;
+}
+.img_chanr {
+	display: flex;
+	margin-bottom: 10px;
+}
+.empty_chanr {
+	width: 93px;
+	height: 151px;
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 5px;
+}
+.empty_chanr:first-child {
+	margin-right: 10px;
+}
+.more {
+	padding: 10px 20px;
+	width: 100%;
+	background: linear-gradient(113.77deg, #13268B -21.21%, #3B60E4 124.98%);
+	box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25), inset 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	font-family: 'Exo 2';
+	color: white;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+}
+.wrapper_more {
+	text-align: right;
+	margin: 40px 0 0 0;
+}
+
+footer {
+	background: linear-gradient(91.04deg, #13268B -16.91%, #3B60E4 159.03%);
+	box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 10px 10px 0 0;
+	max-height: 240px;
+	padding-top: 40px;
+}
+
+.blocks, .block_links {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-family: 'Exo 2';
+	font-weight: 700;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	margin: 0 28px;
+}
+
+.links a {
+	text-decoration: none;
+	color: white;
+	margin-top: 5px;
+}
+
+.links h2 {
+	margin: 0 0 10px 0;
+	font-size: 28px;
+	color: white;
+}
+
+.block_info {
+	font-family: 'Exo 2';
+	width: 210px;
+	font-size: 14px;
+}
+.desc {
+	font-weight: 400;
+}

@@ -1,0 +1,11 @@
+.dark {
+    background: linear-gradient(91.04deg, #08134d -16.91%, #1e3794 159.03%);
+}
+.dark_theme_text {
+    color: white;
+    font-family: 'Exo 2';
+    font-weight: 700;
+}
+.dark_body {
+    background: linear-gradient(91.04deg, #030929 -16.91%, #102261 159.03%);
+}
